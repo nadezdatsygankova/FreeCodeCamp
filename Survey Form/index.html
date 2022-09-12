@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">
+      <h1 id="title">Survey Form</h1>
+        <p id="decription">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+          <label for ="name" id="name-label">Name</label>
+          <input placeholder="Enter your name" requried id="name" type="text" class="form-control">
+          </div>
+
+          <div class="form-group">
+          <label for ="email" id="name-email">Email</label>
+           <input placeholder="Enter your Email" requried id="email" type="email" class="form-control">
+           </div>
+
+           <div class="form-group">
+           <label for ="number" id="number-email">Age (optional) </label>
+           <input placeholder="Age" requried id="number" type="number" min="13" max="99" class="form-control">
+           </div>
+           <div class="form-group">
+<p>Which option describes your current role?</p>
+          <label for="dropdown">
+          <select id="dropdown" name="dropdown" class="form-control">
+            <option value="" >(select current role)</option>
+            <option value="1">Software Developer</option>
+            <option value="2">Web-Developer</option>
+            <option value="3">Back-End Developer</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </div>
+        <div class="form-group">
+        
+          <p> Would you recommend app to a friend?</p>
+            <label>
+        <input id="business-account" type="radio" name="recommend" class="input-radio" /> Definitely
+        </label>
+        <label>
+        <input id="business-account" type="radio" name="recommend" class="inline input-radio" /> Maybe
+         </label>
+          <label>
+        <input id="business-account" type="radio" name="recommend" class="input-radio" /> Not sure
+        </label>
+</div>
+
+<div class="form-group">
+<p>What is your favorite feature of this app?</p>
+<label for="dropdown_feature">
+          <select class="form-control" id="dropdown_feature" name="dropdown_feature">
+            <option value="">(select an option)</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </div>
+<div class="form-group">
+        
+          What would you like to see improved? (Check all that apply)
+           <label>
+          <input id="improved" type="checkbox" required name="improved" class="inline input-checkbox" /> Front-end Projects
+           </label>
+            <label>
+           <input id="improved" type="checkbox" required name="improved" class="inline input-checkbox" /> Back-end Projects
+            </label>
+               <label>
+            <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Data Visualization  </label>
+             <label>
+             <input id="improved" type="checkbox" required name="improved" class="input-checkbox" /> Challenges </label>
+              <label>
+              <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Open Source Community </label>
+               <label>
+               <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Gitter help rooms </label>
+                <label>
+               <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Videos
+                </label>
+                <label>
+               <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> City Meetups</label>
+               <label>
+               <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Wiki</label>
+               <label>
+               <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Forum</label>
+               <label>
+               <input id="improved" type="checkbox" required name="improved" class=" input-checkbox" /> Additional Courses</label>
+      
+</div>
+<div class="form-group">
+        <label for="bio">Anny comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..." class="input-textarea"></textarea>
+        </label>
+        </div>
+      
+      <input type="submit" value="Submit" id="submit" class="submit-button" />
+
+          </form>
+          </div>
+      </body>
+  </html>
